@@ -1,0 +1,1 @@
+# SimpleParallax.js-explanation
