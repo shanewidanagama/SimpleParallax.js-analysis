@@ -1,0 +1,189 @@
+<!--
+Page name: Question 2A - Simple Parallax Tutorial HTML
+Description: Contains the text explaining how to use simpleParallax.js, and
+the images that parallax effects will be applied to.
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="./css/styles.css">
+  <title>Assn3Q2A</title>
+  <!-- gets simpleParallax.js using a content delivery network -->
+  <script defer src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.2.0/dist/simpleParallax.min.js"></script>
+  <!-- calls JS file containing code that uses the simpleParallax library -->
+    <script defer src="./scripts/index.js"></script>
+</head>
+<body>
+<main>
+  <h1>simpleParallax JS Library Tutorial</h1>  <!-- page header -->
+
+<!-- Introduction -->
+<section>
+  <h2>Introduction</h2>
+  <p>simpleParallax.js is a javascript library that
+  is used to apply basic parallax animations to image tags as a user scrolls
+  through a webpage. It requires a single line of code to install, and a minimum
+  of three more to implement its effect. For this reason, it is useful when the user needs to apply a simple
+  parallax animation quickly and easily, provided that the web developer is not
+  trying to make anything fancy (other parallax libraries can achieve more complex
+  scrolling animations in fewer lines of code). The library's simplicity, also makes more accessible
+  to web developers of varying skill, as well as people who are not web developers. Furthermore, the lightweight nature of
+  simpleParallax.js means it is better suited for websites requiring fewer and
+  less complex animation, as it will result in less of a performance hit than
+  more complex parallax and scrolling javascript libraries. This library was
+  made by Geoffrey Signorato. </p>
+</section>
+
+<!-- Pros and Cons of using simpleParallax.js -->
+<section>
+  <h2>Pros and Cons</h2>
+  <p>This parallax library can be used to on image tags themselves, instead of having to set
+  the desired images as background images. As such, it is intuitive and easy to use.
+  It provides a smooth parallax effect while being very
+  lightweight. A con of this library is the library's scrolling event can
+  sometimes affect overall performance of the website. For this reason,
+  the library's creator recommends using the requestAnimationFrame function of
+  the Window interface. There are also a few quirks to take note of when using
+  this library. Sometimes, for seemingly the parallax effect will not work.
+  Changing the zoom level of the browser window will unfreeze the images, but
+  it remains an unresolved issue web developers should know about. In addition,
+  if there happens to be a syntax error in at least one of the javascript
+  statements, all parallax effects on that page will cease to work. While this
+  is not a problem for the end-user web developers should keep this in mind
+  when writing or debugging their code.</p>
+</section>
+
+<!-- Overview of how to setup and use the library -->
+<section>
+  <h2>Getting Started</h2>
+  <p>Here is some sample code that contains the bare minimum of what is needed
+  to start using this parallax library. It installs the simpleParallax.js
+  library, specifies and selects an image, and applies the default parallax
+  effect to it.</p>
+  <!-- example HTML of how to install simpleParallax -->
+  <h3>HTML (sample.html)</h3>
+    <textarea rows="20" cols="120">
+      <html lang="en">
+      <head>
+        <link rel="stylesheet" href="./css/styles.css">
+        <!-- installs the library using a content delivery system -->
+        <script defer src="https://cdn.jsdelivr.net/npm/simple-parallax-js@5.2.0/dist/simpleParallax.min.js"></script>
+        <!-- calls JS file that uses the library -->
+        <script defer src="./scripts/index.js"></script>
+      </head>
+      <body>
+
+        <div>
+          <!-- specifies the image -->
+          <img class="sample" src="./img/vaporwave.jpg" alt="vaporwave">
+        </div>
+
+      </body>
+      </html>
+    </textarea>
+    <!-- example JS code of how to apply parallax -->
+  <h3>Javascript (sample.js)</h3>
+  <textarea rows="3" cols="80">
+    //selects the image
+    var image = document.getElementsByClassName('sample');
+    new simpleParallax(image);  //applies parallax effect
+  </textarea>
+  <!-- example output of the above code -->
+  <h3>Output</h3>
+    <div>
+      <img class="sample" src="./img/vaporwave.jpg" alt="vaporwave">
+    </div>
+  </section>
+
+<!-- Explains various settings of the library, together with sample code and
+output -->
+<section>
+  <h2>Settings</h2>
+  <h4>Orientation</h4>
+  <p>To change the direction of the parallax effect, set its orientation to at
+  least one of four directions (up, down, right, left). Combinations of vertical
+  and horizontal orientations can be used to create horizontal parallax effects.</p>
+  <textarea rows="2" cols="80">
+    i.e. let orientationImg = document.getElementsByClassName("orientationExample");
+         new simpleParallax(orientationImg, {orientation: 'right'});
+  </textarea>
+  <div>
+    <img class="orientationExample" src="./img/vaporwave.jpg" alt="vaporwave">
+  </div>
+
+  <h4>Scale</h4>
+  <p>Increasing parallax effects scale will increase how much the image will
+  move as the user is scrolling. However, this will also reduce the quality of
+  the image. To prevent this, choose an image with a width (in pixels) that is equal to the
+  current image width multiplied by the scale value. If the parallax effect is
+  horizontal, replace width with length.</p>
+  <textarea rows="2" cols="80">
+    i.e. let scaleImg = document.getElementsByClassName('scaleExample');
+         new simpleParallax(scaleImg, {scale: 2});
+  </textarea>
+  <div>
+    <img class="scaleExample" src="./img/vaporwave.jpg" alt="vaporwave">
+  </div>
+
+  <h4>Overflow</h4>
+  <p>By setting overflow to true, the selected image is able to continue beyond the
+  length or width of an image, causing the image travel across the page. Be
+  careful with this setting, as it result in the image overlapping with other
+  areas of the webpage</p>
+  <textarea rows="2" cols="80">
+  i.e.  let overflowImg = document.getElementsByClassName("overflowExample");
+        new simpleParallax(overflowImg, {overflow: true, orientation: 'right'});
+  </textarea>
+  <div>
+    <img class="overflowExample" src="https://upload.wikimedia.org/wikipedia/en/a/a5/2814_-_Birth_of_a_new_day.jpeg" alt="vaporwave city">
+  </div>
+
+  <h4>Delay</h4>
+  <p>The delay setting allows the parallax effect to continue for a time
+  after the user has stopped scrolling. The delay time is measured in seconds.</p>
+  <textarea rows="2" cols="80">
+  i.e.  let delayImg = document.getElementsByClassName("delayExample");
+        new simpleParallax(delayImg, {delay: 5});
+  </textarea>
+  <div>
+    <img class="delayExample" src="./img/vaporwave.jpg" alt="vaporwave">
+  </div>
+
+  <h4>Additional Settings</h4>
+  <h4>Transition</h4>
+  <p>The transition setting is used to add any kind of CSS transition to the delay setting. This
+  includes ease, linear, ease-in, ease-out, ease-in-out, and cubic-bezier. It
+  accepts a string (i.e. linear), and is meant to be used together with the
+  delay setting</p>
+  <h4>Custom Container</h4>
+  <p>The parallax effect is usually determined by the percentage that a user
+  has scrolled in reference to the body. However, if an image is inside a
+  container that the user can also scroll through, the customContainer setting
+  can be used. customContainer can accept either a string or a node specifying
+  the container that the scroll percentage should be calculated in reference to.
+  </p>
+  <h4>Max Transition</h4>
+  <p>The maxTransition setting can be used to stop the parallax effect after
+  reaching a particular scroll percentage ranging from 0% to 100%. As such,
+  maxTransition accepts numbers (the % sign is not needed). </p>
+</section>
+
+<!-- Gives explanation of the only important method from the library -->
+<section>
+  <h2>Methods</h2>
+  <h3>Destroy simpleParallax instance</h3>
+  <p>This straight forward method can be used to remove the parallax effect on
+  an image for whatever reason.</p>
+
+  <textarea rows="3" cols="80">
+    i.e.  let delayImg = document.getElementsByClassName("delayExample");
+          let instance = new simpleParallax(delayImg, {delay: 5});
+          instance.destroy();
+    </textarea>
+
+</section>
+
+</main>
+</body>
+</html>
