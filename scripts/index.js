@@ -1,5 +1,5 @@
 "use strict";  //executes code in "strict mode"
-// Page name: Javascript for
+// Page name: Javascript for Parallax.js
 // Description: Selects images and applies various parallax animations
 //to them using simpleParallax.js .
 
