@@ -8,11 +8,13 @@ A quickstart guide to using the simpleParallax.js library to create various para
 
 # How it's Made
 
-**Tech Used:** JavaScript, HTML, CSS
+**Tech Used:** JavaScript, HTML, CSS, SimpleParallax.js
+
+I made this review of the SimpleParallax.js library using HTML5, CSS3, and Vanilla JavaScript, but it works with other frontend frameworks!
 
 # Lessons Learned
 
-SimpleParallax.js is a library that allows you to implement beautiful parallax animations easily without needing knowledge of the CSS rules. This makes it especially valuable for developers that do not specialize in frontend development.
+SimpleParallax.js is a library that allows you to implement beautiful parallax animations easily without needing knowledge of relevant CSS rules. This makes it especially valuable for developers that do not specialize in frontend development.
 
 This library was surprisingly enjoyable to use, and I would recommend
 others to use it as well.
