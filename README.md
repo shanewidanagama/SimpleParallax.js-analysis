@@ -1,6 +1,6 @@
-# SimpleParallax.js-explanation
+# SimpleParallax.js-analysis
 
-A quickstart guide to using the simpleParallax.js library to create various parallax effects as the user scrolls through your webpage.
+An evaluation of and guide to using the simpleParallax.js library to create various parallax effects as the user scrolls through your webpage.
 
 **Link to project**: https://shanewidanagama.github.io/SimpleParallax.js-explanation/
 
