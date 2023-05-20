@@ -10,7 +10,7 @@ An evaluation of and guide to using the simpleParallax.js library to create vari
 
 **Tech Used:** JavaScript, HTML, CSS, SimpleParallax.js
 
-This is a single page app made using HTML5, CSS3, and Vanilla JavaScript and hosted on Github Pages.
+This is a single page site made using HTML5, CSS3, and Vanilla JavaScript and hosted on Github Pages.
 
 # Lessons Learned
 
