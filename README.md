@@ -10,7 +10,7 @@ A quickstart guide to using the simpleParallax.js library to create various para
 
 **Tech Used:** JavaScript, HTML, CSS, SimpleParallax.js
 
-I made this review of the SimpleParallax.js library using HTML5, CSS3, and Vanilla JavaScript, but it works with other frontend frameworks!
+This is a single page app made using HTML5, CSS3, and Vanilla JavaScript and hosted on Github Pages.
 
 # Lessons Learned
 
