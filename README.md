@@ -12,9 +12,17 @@ An evaluation of and guide to using the simpleParallax.js library to create vari
 
 This is a single-page site made using HTML5, CSS3, and Vanilla JavaScript and hosted on Github Pages.
 
+# Optimizations
+- Darker font color to increase readability
+
 # Lessons Learned
 
 SimpleParallax.js is a library that allows you to implement beautiful parallax animations easily without needing knowledge of relevant CSS rules. This makes it especially valuable for developers that do not specialize in frontend development.
 
 This library was surprisingly enjoyable to use, and I would recommend
 others to use it as well.
+
+# See more of my applications and automation
+- [Trick Shot E-Commerce Client](https://github.com/shanewidanagama/trick-shot-ecommerce-client)
+- [Reusable Spring Boot App Workflows](https://github.com/kevdev424/spring-petclinic)
+- [Personal Site](https://github.com/shanewidanagama/shanewidanagama.github.io)
