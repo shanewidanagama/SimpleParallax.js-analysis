@@ -22,7 +22,7 @@ SimpleParallax.js is a library that allows you to implement beautiful parallax a
 This library was surprisingly enjoyable to use, and I would recommend
 others to use it as well.
 
-# See more of my applications and automation
+# See More
 - [Trick Shot E-Commerce Client](https://github.com/shanewidanagama/trick-shot-ecommerce-client)
 - [Reusable Spring Boot App Workflows](https://github.com/kevdev424/spring-petclinic)
 - [Personal Site](https://github.com/shanewidanagama/shanewidanagama.github.io)
